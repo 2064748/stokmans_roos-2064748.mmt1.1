@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body {
+    background-color: white;
+    height: 3263px;
+} h2 {
+    font-family: 'Montserrat, Muna';
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+/* header */
+header {
+    background-color: palevioletred;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+}   #grad-header {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, hsl(18, 89%, 81%, 82%), hsl(307, 100%, 77%, 49%));
+}       #grad-header img {
+        cursor: pointer;
+        display: block;
+        float: left;
+        margin-left: 1%;
+}           #green {
+            cursor: pointer;
+            float: right;
+            display: block;
+            width: 172px;
+            height: 63px;
+            background-color: #68F2B2;
+            border-radius: 32px;
+            border: none;
+            color: white;
+            font-family: 'Muna';
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 1%;
+            margin-right: 1%;
+            cursor: pointer;
+}               #green:hover {
+                background-color: black;
+}
+
+.header-list {
+    text-align: center;
+    display: inline-block;
+    margin-left: 15%;
+    width: 800px;
+    height: 100%;
+}   .header-list li {
+    display: inline-block;
+    padding: 3%;
+    padding-right: 10%;
+    margin-top: 2%;
+}       .header-list a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Muna';
+        font-size: 25px;
+        font-weight: bold;
+}           .header-list a:hover {
+            color: black;
+}
+
+/* slideshow */
+.intro {
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+} .slideshow-img {
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}       
+/* .slideshow-img :first-child {
+        display: block;
+} */
+
+#kolom1 {
+    /* background-color: palevioletred; */
+    position: relative;
+    width: 90%;
+    height: 742px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6%;
+    text-align: center;
+}   .phone-text {
+    position: relative;
+    width: 90%;
+    top: 8%;
+    margin: 0 auto;
+}   .phone-text img {
+    float: left;
+}   .phone-text h2 {
+    float: right;
+    text-align: left;
+    color: black;
+    margin-right: 15%;
+    margin-top: 2%;
+    font-family: 'Muna';
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 100px;
+}       .account {
+        position: absolute;
+        width: 475px;
+        height: 169px;
+        bottom: 0%;
+        margin: 0 auto;
+        left: 35%;
+        text-align: center;
+}           .account #green {
+            position: relative;
+            width: 475px;
+            height: 99px;
+            font-size: 45px;
+            border-radius: 50px;
+            margin: 0 auto;
+            cursor: pointer;
+}           .login {
+            position: relative;
+            cursor: pointer;
+            display: block;
+            font-family: 'Muna';
+            font-size: 22px;
+            font-weight: bold;
+            height: 50px;
+            top: 20px;
+}               .login:hover {
+                text-decoration: underline;
+}
+
+#kolom2 {
+    position: relative;
+    width: 1434px;
+    height: 742px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6%;
+    text-align: center;
+}   .text {
+    /* background-color: cornflowerblue; */
+    position: relative;
+    width: 692px;
+    height: 698px;
+    display: block;
+    left: 0px;
+    top: 0px;
+}       .text h2{
+        font-family: 'Muna';
+        font-size: 70px;
+        font-weight: bold;
+        line-height: 100px;
+        text-align: left;
+        float: left;
+        width: 100%;
+        height: 429px;
+}       .text p {
+        font-family: 'Muna';
+        font-size: 30px;
+        line-height: 50px;
+        height: 86px;
+        position: relative;
+        font-weight: normal;
+        text-align: left;
+        display: block;
+}       .text #green {
+        position: absolute;
+        bottom: 3%;
+        width: 475px;
+        height: 99px;
+        border-radius: 50px;
+        font-size: 45px;
+        cursor: pointer;
+}           #artist {
+            position: absolute;
+            display: block;
+            width: 693px;
+            height: 677px;
+            top: 0;
+            right: 0px;
+}           .art {
+            display: inline-block;
+            width: 336px;
+            height: 330px;
+            background-size: cover;
+            margin-left: 1px;
+            margin-bottom: 5px;
+}           .art:hover {
+                cursor: pointer;
+                opacity: 30%;
+}                   .music p {
+                    position: relative;
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 45%;
+                    font-family: 'Muna';
+                    color: white;
+                    font-weight: bold;
+                    font-size: 0px;
+                    opacity: 100%;
+}                   
+
+footer {
+    position: relative;
+    display: block;
+    top: 7%;
+    background-color: black;
+    height: 424px;
+}   #footer {
+    width: 100%;
+    height: 100%;
+}   .logo {
+    position: absolute;
+    bottom: 35%;
+    left: 50px;
+    cursor: pointer;
+}   #footer h3 {
+    margin: 0 auto;
+    top: 50px;
+    width: 356px;
+    height: 159px;
+    display: block;
+    font-family: 'Muna';
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 65px;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+}   .socials {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+
+
+/* article page */
+#article {
+    width: 100%;
+    height: 0%;
+}
+
+.zomer {
+    width: 960px;
+    height: 942px;
+    background-image: cover;
+}   .zomer h4 {
+    position: absolute;
+    text-align: center;
+    font-family: 'Muna';
+    font-size: 141px;
+    font-weight: bold;
+    line-height: 171px;
+    color:white;
+    top: 40%;
+    left: 10%;
+}   .zomer p {
+    position: absolute;
+    font-family: 'Muna';
+    font-size: 60px;
+    font-weight: bold;
+    color: #68F2B2;
+    top: 80%;
+    left: 13%;
+}
+
+#article h5 {
+    position: absolute;
+    font-family: 'Muna';
+    font-size: 40px;
+    font-weight: bold;
+    right: 20.5%;
+    top: 15%;
+}
+
+#article footer {
+    position: relative;
+}
